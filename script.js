@@ -13,7 +13,7 @@ let texts = [
     "no seas malaaaa 💖", // Tercer mensaje
     "mira como eres eh 💘", // Cuarto mensaje
     "ai cv", // Quinto mensaje
-    "te voy a pegar tu  eh", // Sexto mensaje
+    "te voy a pegar tu poto eh", // Sexto mensaje
     "waa", // Séptimo mensaje
     "y yo que quedarte sorpresa 🎁", // Octavo mensaje
     "ahora no tienes opcion", // Noveno mensaje
