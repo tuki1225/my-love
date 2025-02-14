@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #ff6b81, #ff9671);
+    color: white;
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 200px;
+    height: auto;
+    transition: transform 0.3s ease; /* Este efecto hace que la imagen se agrande suavemente */
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex; /* Los botones estarán uno al lado del otro */
+    justify-content: center;
+    position: relative; /* Necesario para posicionar los botones sobre la misma área */
+}
+
+/* Estilos comunes de los botones */
+button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 30px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 150px;  /* Aseguramos que tengan el mismo tamaño */
+    height: 50px;  /* Definimos una altura estándar */
+    border-radius: 8px; /* Bordes redondeados */
+    position: relative; /* Posicionamos los botones normalmente en fila */
+}
+
+/* Estilo para el botón "Sí" */
+#yesButton {
+    background-color: #a2d8f7; /* Azul pastel claro */
+    transition: transform 0.3s ease;
+    z-index: 2; /* Aseguramos que el botón "Sí" esté encima cuando crezca */
+}
+
+#yesButton:hover {
+    transform: scale(1.1); /* Efecto al pasar el ratón por encima */
+    background-color: #7cc1eb; /* Azul pastel un poco más oscuro */
+}
+
+/* Estilo para el botón "No" */
+#noButton {
+    background-color: #707070; /* Gris plomo */
+    transition: transform 0.3s ease;
+    z-index: 1; /* El botón "No" queda detrás cuando el "Sí" crezca */
+}
+
+#noButton:hover {
+    transform: scale(1.1); /* Efecto al pasar el ratón por encima */
+    background-color: #595959; /* Gris plomo un poco más oscuro */
+}
+
+button:hover {
+    background-color: white;
+    color: #ff6b81;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Opcional: Efecto cuando se haga clic en el botón */
+button:active {
+    transform: scale(0.95); /* Hace que el botón se "comprema" ligeramente */
+}
